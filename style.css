@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
 
-/* ===========================
-   Reset + Global
-=========================== */
+/* Reset + Global */
 * {
   font-family: "Tajawal", sans-serif;
   margin: 0;
@@ -13,18 +11,15 @@
 
 body {
   padding-top: 80px;
-  background-color: #1c1c1c;
+  background-color: #0d0f1a;
   color: #fff;
 }
 
-/* ===========================
-   Header
-=========================== */
+/* Header */
 header {
-  background-color: #1c1c1c;
+  background-color: #0d0f1a;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   z-index: 999;
   display: flex;
@@ -32,177 +27,175 @@ header {
   align-items: center;
   padding: 10px 100px;
 }
-
 .logo {
-  text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
   font-size: 1.6em;
-  text-transform: capitalize;
+  text-decoration: none;
 }
-
 .navigation a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-size: 1.05em;
   font-weight: 500;
   padding-left: 25px;
   transition: color 0.3s ease;
 }
-.navigation a:hover {
-  color: #9b59b6;
+.navigation a:hover { color: #c084fc; }
+
+/* زر المنيو */
+/* زر المنيو */
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  font-size: 1.8em;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* مخفي في اللابتوب */
+  transition: transform 0.3s ease;
 }
 
-/* ===========================
-   Sections
-=========================== */
-section {
-  padding: 100px 200px;
+.menu-toggle:hover {
+  transform: scale(1.1);
+  color: #6cb2ff;
 }
 
+/* القائمة المنيو */
+.center-menu {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  z-index: 1000;
+  animation: slideDown 0.4s ease forwards;
+}
+
+.center-menu.show {
+  display: flex;
+}
+
+.center-menu a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.center-menu a:hover {
+  color: #6cb2ff;
+  transform: translateX(5px);
+}
+
+/* حركة نزول ناعمة */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* يظهر فقط في الجوال والتابلت */
+@media (max-width: 1024px) {
+  .menu-toggle {
+    display: block;
+  }
+  header .navigation {
+    display: none;
+  }
+}
+.center-menu a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+.center-menu a:hover {
+  color: #6cb2ff;
+}
+
+
+.center-menu.show { display: flex; }
+
+/* Sections */
+section { padding: 100px 200px; }
 .title {
   text-align: center;
-  color: #4a6fa5;
+  color: #6cb2ff;
   font-size: 2.2em;
   font-weight: 800;
   margin-bottom: 30px;
 }
 
-/* ===========================
-   Home
-=========================== */
+/* Home */
 .main {
-  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(image/background.jpeg) no-repeat;
+  justify-content: center;
+  background: url(image/background2.jpeg) no-repeat center center;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
 }
-
-.main h2 {
-  color: #fff;
-  font-size: 1.6em;
-  font-weight: 600;
-}
-
+.main h2 { font-size: 1.6em; font-weight: 600; }
 .main h2 span {
-  color: #4a6fa5;
+  color: #9a82e1;
   font-size: 2.4em;
   font-weight: 700;
-  border-right: 2px solid #4a6fa5;
+  border-right: 2px solid #d7b9f497;
   padding-right: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
 }
-
-.main h3 {
-  color: #fff;
-  font-size: 1.4em;
-  font-weight: 400;
-  margin: 10px 0 30px;
-}
-
-/* Home Buttons */
+.main h3 { font-size: 1.4em; margin: 10px 0 30px; }
 .main-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 0.6em 1.2em;
-  font-size: 0.95em;
   font-weight: 600;
   color: #fff;
-  border: 2px solid #4a6fa5;
+  border: 2px solid #6cb2ff;
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
   margin-right: 15px;
 }
 .main-btn:hover {
-  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  background: linear-gradient(135deg, #6cb2ff, #c084fc);
   border-color: transparent;
   transform: scale(1.05);
 }
-
-/* Home Contact Icons */
 .section-icons {
-  display: flex;
-  justify-content: flex-start;
-  gap: 25px;
-  margin-top: 40px;
-  margin-left: 15px;
+  display: flex; gap: 25px; margin-top: 40px;
 }
-.section-icons a {
-  color: #fff;
-  font-size: 2em;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.section-icons a:hover {
-  transform: scale(1.2);
-  color: #c084fc;
-}
+.section-icons a { font-size: 2em; color: #fff; transition: 0.3s; }
+.section-icons a:hover { color: #c084fc; transform: scale(1.2); }
 
-/* ===========================
-   About
-=========================== */
-.about {
-  background-color: #1c1c1c;
-}
+/* About */
 .about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  max-width: 1000px;
-  margin: auto;
+  display: flex; gap: 40px; max-width: 1000px; margin: auto;
 }
 .about-image img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  animation: float 4s ease-in-out infinite;
+  width: 250px; height: 250px; border-radius: 50%; object-fit: cover;
 }
-@keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0); }
-}
-.about-text {
-  max-width: 600px;
-  font-size: 1.05em;
-  color: #fff;
-  line-height: 1.8;
-}
-.about-text p {
-  margin-bottom: 15px;
-}
+.about-text { max-width: 600px; color: #e2e2e2; line-height: 1.8; }
 
-/* ===========================
-   Projects
-=========================== */
-.projects {
-  background-color: #1c1c1c;
-}
+/* Projects */
 .projects .content {
   display: grid;
-  grid-template-columns: repeat(3, 320px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   justify-content: center;
-  justify-items: center;
 }
-
 .project-card {
-  background-color: #2a2a2a;
+  background-color: #1a1f2b;
   padding: 25px;
   border-radius: 15px;
   text-align: center;
   color: #fff;
-  width: 320px;
   box-shadow: 0 6px 16px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -212,89 +205,74 @@ section {
 }
 .project-image img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 .project-title {
   font-size: 1.3em;
   font-weight: 700;
-  color: #c084fc;
   margin-bottom: 10px;
 }
 .project-description {
   font-size: 0.95em;
-  color: #ccc;
+  color: #b3c2e0;
   margin-bottom: 15px;
 }
 .project-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 15px;
+  display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 15px;
 }
 .project-tags span {
-  background-color: #444;
-  color: #fff;
+  background-color: #2c2f3a;
   padding: 5px 12px;
   border-radius: 20px;
   font-size: 0.85em;
 }
 .project-buttons .btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
   padding: 0.6em 1.2em;
-  font-size: 0.95em;
   font-weight: 600;
   color: #fff;
-  border: 2px solid #4a6fa5;
+  border: 2px solid #6cb2ff;
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 .project-buttons .btn-outline:hover {
-  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  background: linear-gradient(135deg, #6cb2ff, #c084fc);
   border-color: transparent;
   transform: scale(1.05);
 }
 
-/* ===========================
-   Contact
-=========================== */
+/* Contact */
 .section-contact {
-  background-color: #1c1c1c;
+  background-color: #0d0f1a;
   padding: 100px 20px;
   text-align: center;
 }
-
+.section-contact p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #d2dadd;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 .section-contact .title {
   font-size: 2.4em;
-  color: #4a6fa5;
+  color: #6cb2ff;
   margin-bottom: 40px;
   font-weight: 700;
 }
-
 .contact-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; margin-top: 20px;
 }
 .contact-icons a {
   font-size: 3.2em;
-  color: #ffffff;
+  color: #fff;
   transition: transform 0.3s ease, color 0.3s ease;
 }
-.contact-icons a:hover {
-  transform: scale(1.2);
-  color: #c084fc;
-}
-
-/* زر قل مرحباً */
+.contact-icons a:hover { transform: scale(1.2); color: #c084fc; }
 #hello-btn {
   display: inline-flex;
   align-items: center;
@@ -303,7 +281,7 @@ section {
   font-size: 1em;
   font-weight: 600;
   color: #fff;
-  border: 2px solid #4a6fa5;
+  border: 2px solid #6cb2ff;
   border-radius: 10px;
   background: transparent;
   cursor: pointer;
@@ -311,94 +289,99 @@ section {
   margin-top: 20px;
 }
 #hello-btn:hover {
-  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  background: linear-gradient(135deg, #6cb2ff, #c084fc);
   border-color: transparent;
   transform: scale(1.05);
 }
 
-/* ===========================
-   Fonts for sections
-=========================== */
-.section-contact,
-.projects,
-.about {
-  font-family: "Tajawal", sans-serif;
-  font-weight: 400;
-  line-height: 1.8;
-}
+
+
+
 
 .popup-message {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  bottom: 20px;
+  right: 20px;
+  background: rgba(108, 178, 255, 0.95);
   color: #fff;
-  padding: 15px 25px;
-  border-radius: 10px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1em;
   font-weight: 600;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   animation: fadeInOut 3s ease forwards;
-  z-index: 1000;
+  z-index: 2000;
 }
 
-
-/* حركة الظهور والاختفاء */
 @keyframes fadeInOut {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  10% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(20px); }
 }
 
-/* ===========================
-   Responsive Design
-=========================== */
-@media (max-width: 600px) {
-  body {
-    background-color: #2c2c2c; /* لون مختلف للجوال */
-  }
+#hello-btn.active {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
 
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #0d0f1a;
+}
+footer p {
+  color: #A78BFA;
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  section { padding: 80px 40px; }
   header {
     flex-direction: column;
-    padding: 10px 20px;
-    align-items: flex-start;
+    align-items: center;
+    padding: 10px 40px;
   }
-
-  .navigation a {
-    padding-left: 10px;
-    font-size: 0.9em;
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-
-  section {
-    padding: 60px 20px;
-  }
-
-  .projects .content {
-    grid-template-columns: 1fr; /* مشروع واحد في الصف */
-  }
-
   .about-container {
     flex-direction: column;
     text-align: center;
   }
-
   .about-image img {
     width: 200px;
-    height: 200px;
+    height: auto;
   }
+  .projects .content {
+    grid-template-columns: repeat(2, 1fr); /* 2 أعمدة في التابلت */
+  }
+  .main {
+    background-attachment: scroll; /* يخلي الخلفية تتحرك في التابلت */
+  }
+}
 
-  .contact-icons a {
-    font-size: 2em;
+@media (max-width: 600px) {
+  section { padding: 60px 20px; }
+  .projects .content { grid-template-columns: 1fr; } /* مشروع واحد في الجوال */
+  .about-container { flex-direction: column; text-align: center; }
+  .about-image img { width: 180px; height: auto; }
+  .contact-icons a { font-size: 2em; }
+  .main {
+    background-attachment: scroll; /* يخلي الخلفية تتحرك في الجوال */
+  }
+  .menu-toggle {
+    display: block; /* يظهر زر المنيو في الجوال */
+  }
+  header .navigation {
+    display: none; /* يخفي الروابط العادية في الجوال */
   }
 }
