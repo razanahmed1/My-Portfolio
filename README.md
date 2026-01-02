@@ -7,7 +7,6 @@ I created this project to build a personal website that showcases my skills in d
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![Responsive](https://img.shields.io/badge/Responsive%20Design-4A6FA5?style=for-the-badge)](#)
 [![Netlify](https://img.shields.io/badge/Hosted%20on-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)]
-
 (https://www.netlify.com)
 
 ---
