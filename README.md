@@ -41,6 +41,7 @@ I created this project to build a personal website that showcases my skills in d
     ├── logo1.jpeg  
     ├── background.jpeg  
     └── other images
+    
 ## 📱 Responsive Design  
 - Added the `viewport` meta tag for mobile compatibility  
 - Used media queries in CSS to adjust layout for smaller screens
