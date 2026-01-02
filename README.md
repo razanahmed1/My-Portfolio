@@ -36,16 +36,14 @@ I created this project to build a personal website that showcases my skills in d
 ## 📁 File Structure
 
 
-
-📁 Project/
-├── index.html        # Main HTML file
-├── style.css         # CSS styling file
-├── script.js         # JavaScript functionality
-└── 📁 images/        # Images folder
-├── logo1.jpeg
-├── background.jpeg
-└── other images
-
+📁 My-Portfolio/
+├── index.html          # Main HTML file
+├── style.css           # CSS styling file
+├── script.js           # JavaScript functionality
+└── 📁 images/           # Images folder
+    ├── logo1.jpeg
+    ├── background.jpeg
+    └── other images
 ## 📱 Responsive Design  
 - Added the `viewport` meta tag for mobile compatibility  
 - Used media queries in CSS to adjust layout for smaller screens
