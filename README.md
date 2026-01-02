@@ -36,10 +36,7 @@ I created this project to build a personal website that showcases my skills in d
 ## 📁 File Structure
 
 
-
 📁 Project/ ├── index.html ├── style.css ├── script.js └── 📁 image/ ├── logo1.jpeg ├── background.jpeg └── other images
-
-
 ---
 
 ## 📱 Responsive Design  
