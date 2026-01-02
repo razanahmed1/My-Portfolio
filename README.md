@@ -1,7 +1,7 @@
 # My-Portfolio
 My personal website showcasing my work in data analysis and UI design.  Developed using HTML, CSS, and JavaScript, it reflects my passion for clarity, precision, and human-centered design.
 
-#### **🌐 View Website:** [Click here](https://verdant-macaron-977715.netlify.app/)
+#### **🌐 View Website:** [My Portfolio](https://verdant-macaron-977715.netlify.app/)
 # 🎨 My Portfolio
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
