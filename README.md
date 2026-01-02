@@ -30,7 +30,7 @@ I created this project to build a personal website that showcases my skills in d
 
 ---
 
-## 📁 My-Portfolio/
+## 📁 File-Structure/
 ├── index.html          # Main HTML file  
 ├── styles.css          # CSS styling file  
 ├── scripts.js          # JavaScript functionality  
