@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+/* ===========================
+   Reset + Global
+=========================== */
+* {
+  font-family: "Tajawal", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 80px;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+/* ===========================
+   Header
+=========================== */
+header {
+  background-color: #1c1c1c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.6em;
+  text-transform: capitalize;
+}
+
+.navigation a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.05em;
+  font-weight: 500;
+  padding-left: 25px;
+  transition: color 0.3s ease;
+}
+.navigation a:hover {
+  color: #9b59b6;
+}
+
+/* ===========================
+   Sections
+=========================== */
+section {
+  padding: 100px 200px;
+}
+
+.title {
+  text-align: center;
+  color: #4a6fa5;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+/* ===========================
+   Home
+=========================== */
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(image/background.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.main h2 {
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+.main h2 span {
+  color: #4a6fa5;
+  font-size: 2.4em;
+  font-weight: 700;
+  border-right: 2px solid #4a6fa5;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.main h3 {
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 10px 0 30px;
+}
+
+/* Home Buttons */
+.main-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #4a6fa5;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-right: 15px;
+}
+.main-btn:hover {
+  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+/* Home Contact Icons */
+.section-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 25px;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.section-icons a {
+  color: #fff;
+  font-size: 2em;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.section-icons a:hover {
+  transform: scale(1.2);
+  color: #c084fc;
+}
+
+/* ===========================
+   About
+=========================== */
+.about {
+  background-color: #1c1c1c;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+.about-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+.about-text {
+  max-width: 600px;
+  font-size: 1.05em;
+  color: #fff;
+  line-height: 1.8;
+}
+.about-text p {
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   Projects
+=========================== */
+.projects {
+  background-color: #1c1c1c;
+}
+.projects .content {
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 30px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.project-card {
+  background-color: #2a2a2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  width: 320px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.project-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.project-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #c084fc;
+  margin-bottom: 10px;
+}
+.project-description {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.project-tags span {
+  background-color: #444;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85em;
+}
+.project-buttons .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #4a6fa5;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.project-buttons .btn-outline:hover {
+  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Contact
+=========================== */
+.section-contact {
+  background-color: #1c1c1c;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section-contact .title {
+  font-size: 2.4em;
+  color: #4a6fa5;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.contact-icons a {
+  font-size: 3.2em;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.contact-icons a:hover {
+  transform: scale(1.2);
+  color: #c084fc;
+}
+
+/* زر قل مرحباً */
+#hello-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.7em 1.4em;
+  font-size: 1em;
+  font-weight: 600;
+  color: #fff;
+  border: 2px solid #4a6fa5;
+  border-radius: 10px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+#hello-btn:hover {
+  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Fonts for sections
+=========================== */
+.section-contact,
+.projects,
+.about {
+  font-family: "Tajawal", sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.popup-message {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: linear-gradient(135deg, #4a6fa5, #9b59b6);
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+  animation: fadeInOut 3s ease forwards;
+  z-index: 1000;
+}
+
+
+/* حركة الظهور والاختفاء */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 600px) {
+  body {
+    background-color: #2c2c2c; /* لون مختلف للجوال */
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px 20px;
+    align-items: flex-start;
+  }
+
+  .navigation a {
+    padding-left: 10px;
+    font-size: 0.9em;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  .projects .content {
+    grid-template-columns: 1fr; /* مشروع واحد في الصف */
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .contact-icons a {
+    font-size: 2em;
+  }
+}
