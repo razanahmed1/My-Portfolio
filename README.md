@@ -36,7 +36,7 @@ I created this project to build a personal website that showcases my skills in d
 ## 📁 File Structure
 
 
-  📁 Project/ 
+  - 📁 Project/ 
   ├── index.html   #Main HTML file
   ├── style.css    #CSS styling file
   ├── script.js    #Java Script
