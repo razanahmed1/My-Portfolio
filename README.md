@@ -33,16 +33,13 @@ I created this project to build a personal website that showcases my skills in d
 
 ---
 
-## 📁 File Structure
-
-
-📁 My-Portfolio/
-├── index.html          # Main HTML file
-├── style.css           # CSS styling file
-├── script.js           # JavaScript functionality
-└── 📁 images/           # Images folder
-    ├── logo1.jpeg
-    ├── background.jpeg
+## 📁 My-Portfolio/
+├── index.html          # Main HTML file  
+├── styles.css          # CSS styling file  
+├── scripts.js          # JavaScript functionality  
+└── 📁 images/           # Images folder  
+    ├── logo1.jpeg  
+    ├── background.jpeg  
     └── other images
 ## 📱 Responsive Design  
 - Added the `viewport` meta tag for mobile compatibility  
