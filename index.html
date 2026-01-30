@@ -1,49 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Razan</title>
-  <!-- أيقونات FontAwesome -->
+  <title>Portfolio Razan Alageeli</title>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css" />
-  <!-- ملف CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <!-- زر القائمة للجوال -->
-  <div class="menu-toggle" onclick="toggleMenu()">
-    <i class="fas fa-bars"></i>
+
+<!-- NAVBAR -->
+<header>
+  <span class="logo" id="logo">Razan Alageeli</span>
+
+  <div class="navigation">
+    <a id="nav-home" href="#home">Home</a>
+    <a id="nav-about" href="#about">About Me</a>
+    <a id="nav-skills" href="#skills">Skills</a>
+    <a id="nav-projects" href="#projects">Projects</a>
+    <a id="nav-experience" href="#experience">Experience</a>
+    <a id="nav-contact" href="#contact">Contact</a>
   </div>
 
-  <!-- القائمة المنبثقة في وسط الشاشة -->
-  <div class="center-menu" id="centerMenu">
-    <a href="#home">Home</a>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- NAVBAR -->
-  <header>
-    <span class="logo">Razan Alageeli</span>
-    <div class="navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <div class="top-buttons">
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
     </div>
-  </header>
 
-  <!-- HOME -->
+    <div class="lang-toggle" id="langToggle">
+      <i class="fas fa-globe"></i>
+    </div>
+  </div>
+</header>
+
+<!-- القائمة المنبثقة للجوال -->
+<div class="center-menu" id="centerMenu">
+  <a id="nav-home-m" href="#home">Home</a>
+  <a id="nav-about-m" href="#about">About Me</a>
+  <a id="nav-skills-m" href="#skills">Skills</a>
+  <a id="nav-projects-m" href="#projects">Projects</a>
+  <a id="nav-experience-m" href="#experience">Experience</a>
+  <a id="nav-contact-m" href="#contact">Contact</a>
+</div>
+
+<!-- HOME -->
 <section class="main" id="home">
   <div>
-    <h2>Hello, I'm Razan.<br>
-      <span class="typing" data-text='["Computer Science","Data Analysis"]'></span>
-    </h2>
-    <h3>I believe in clarity and precision , and that data has a human side that deserves to be seen.</h3>
-    <a href="#projects" class="main-btn"><i class="fas fa-folder-open"></i> View Projects</a>
-    <a href="https://qr.scanned.page/uploads/pdf/ARpL7v_a2f293234875bd9f.pdf" class="main-btn" target="_blank">
+
+    <!-- العنوان أصبح فارغ ليتم تعبئته من الترجمة -->
+    <h2 id="home-title"></h2>
+
+    <!-- الكتابة والمسح تعمل هنا -->
+    <span class="typing" id="typing"
+      data-text='[
+        "Computer Science",
+        "Data Analysis",
+        "Web Development"
+      ]'>
+    </span>
+
+    <h3 id="home-subtitle">
+      I believe in clarity and precision , and that data has a human side that deserves to be seen.
+    </h3>
+
+    <a href="#projects" class="main-btn" id="btn-view-projects">
+      <i class="fas fa-folder-open"></i> View Projects
+    </a>
+
+    <a href="https://qr.scanned.page/uploads/pdf/ARpL7v_a2f293234875bd9f.pdf"
+       class="main-btn" target="_blank" id="btn-cv">
       <i class="fas fa-file-alt"></i> CV
     </a>
 
@@ -53,194 +80,318 @@
       <a href="https://github.com/razanahmed1"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/razan-ageeli-034168209"><i class="fa-brands fa-linkedin"></i></a>
     </div>
+
   </div>
 </section>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2 class="title">About Me</h2>
-    <div class="about-container">
-      <div class="about-image">
-        <img src="image/logo1.jpeg" alt="Razan Profile">
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2 class="title" id="about-title">About Me</h2>
+
+  <div class="about-container">
+    <div class="about-image">
+      <img src="image/logo1.jpeg" alt="Razan Profile">
+    </div>
+
+    <div class="about-text">
+      <p id="about-p1">
+        I'm Razan Alageeli, a Bachelor's graduate in Computer Science with experience in operational control systems and data analysis. I work on transforming data into smart solutions using automation and artificial intelligence, focusing on developing websites and applications that combine clarity, efficiency, and ease of use.
+      </p>
+
+      <p id="about-p2">
+        My passion is creating technological solutions that contribute to more accurate decision-making and building smarter digital experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="section-title" id="skills-title">Skills</h2>
+
+  <div class="skills-wrapper">
+
+    <!-- Technical Skills -->
+    <div class="skills-box">
+      <h3 class="skills-heading" id="tech-skills-title">🧩 Technical Skills</h3>
+
+      <div class="skills-grid">
+        <div class="skill-card" id="skill1">Data Analysis</div>
+        <div class="skill-card" id="skill2">Excel</div>
+        <div class="skill-card" id="skill3">Power BI</div>
+        <div class="skill-card" id="skill4">Data Cleaning</div>
+        <div class="skill-card" id="skill5">Python</div>
+        <div class="skill-card" id="skill6">Web Development</div>
+        <div class="skill-card" id="skill7">HTML</div>
+        <div class="skill-card" id="skill8">CSS</div>
+        <div class="skill-card" id="skill9">JavaScript</div>
+        <div class="skill-card" id="skill10">AI automation</div>
+        <div class="skill-card" id="skill11">UI Design</div>
       </div>
-      <div class="about-text">
-        <p>
-          I'm Razan Alageeli, a data analyst with experience designing interactive dashboards using Excel and Power BI.
-          I love transforming raw data into clear insights that help in decision-making.
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills-box">
+      <h3 class="skills-heading" id="soft-skills-title">🧑‍🧒‍🧒 Soft Skills</h3>
+
+      <div class="skills-grid">
+        <div class="skill-card" id="soft1">Problem Solving</div>
+        <div class="skill-card" id="soft2">Communication</div>
+        <div class="skill-card" id="soft3">Teamwork</div>
+        <div class="skill-card" id="soft4">Adaptability</div>
+        <div class="skill-card" id="soft5">Time Management</div>
+        <div class="skill-card" id="soft6">Attention to Detail</div>
+        <div class="skill-card" id="soft7">Analytical Thinking</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2 class="title" id="projects-title">Projects</h2>
+
+  <div class="content">
+
+    <!-- Project 6 -->
+    <div class="project-card">
+      <div class="project-image" style="font-size: 70px; color: #6cb2ff; text-align: center; padding: 40px 0;">
+        <i class="fas fa-globe"></i>
+      </div>
+
+      <div class="project-info">
+        <h3 class="project-title" id="p6-title">Personal Portfolio Website</h3>
+
+        <p class="project-description" id="p6-desc">
+          A fully designed and developed personal portfolio website showcasing my skills, projects, and experience.
         </p>
-        <p>
-          My passion is combining analysis and design to create results that are both understandable and easy to use.
-          I aspire to continuously develop my skills and share my work with the world.
+
+        <div class="project-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1" target="_blank" class="btn-outline" id="p6-btn">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="image/Dashboard EX 5.png" alt="Excel Dashboard Project">
+      </div>
+
+      <div class="project-info">
+        <h3 class="project-title" id="p1-title">Excel Dashboard</h3>
+
+        <p class="project-description" id="p1-desc">
+          Transform raw data into interactive strategic insights.
         </p>
+
+        <div class="project-tags">
+          <span>Excel</span>
+          <span>Business Intelligence</span>
+          <span>Dashboard</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1/Comprehensive-Sales-Performance-Dashboard-with-Excel"
+             target="_blank" class="btn-outline" id="p1-btn">
+            View Details
+          </a>
+        </div>
       </div>
     </div>
-  </section>
 
- <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <h2 class="title">Projects</h2>
-    <div class="content">
-      <!-- المشاريع الخمسة هنا -->
-      <!-- مشروع 1 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="image/Dashboard EX 5.png" alt="Excel Dashboard Project">
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Excel Dashboard</h3>
-          <p class="project-description">Transform raw data into interactive strategic insights. A comprehensive dashboard that integrates sales analysis, consumer behavior, and satisfaction measurement into a single, highly accurate interface.</p>
-          <div class="project-tags"><span>Excel</span><span>Business Intelligence</span><span>Dashboard</span></div>
-          <div class="project-buttons">
-            <a href="https://github.com/razanahmed1/Comprehensive-Sales-Performance-Dashboard-with-Excel" target="_blank" class="btn-outline"><i class="fas fa-eye"></i> View Details</a>
-          </div>
-        </div>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="image/Dashboard Bi 3.png" alt="Power BI Dashboard Project">
       </div>
 
-      <!-- مشروع 2 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="image/Dashboard Bi 3.png" alt="Power BI Dashboard Project">
+      <div class="project-info">
+        <h3 class="project-title" id="p2-title">Power BI Dashboard</h3>
+
+        <p class="project-description" id="p2-desc">
+          A comprehensive Power BI dashboard analyzing orders and sales.
+        </p>
+
+        <div class="project-tags">
+          <span>Power BI</span>
+          <span>KPI Tracking</span>
+          <span>Logistics</span>
         </div>
-        <div class="project-info">
-          <h3 class="project-title">Power BI Dashboard</h3>
-          <p class="project-description">A comprehensive Power BI dashboard analyzing orders and sales from October 2024 to September 2025. Includes KPIs, shipping status, city-wise sales distribution, and top-performing product categories.</p>
-          <div class="project-tags"><span>Power BI</span><span>KPI Tracking</span><span>Logistics</span></div>
-          <div class="project-buttons">
-            <a href="https://github.com/razanahmed1/sales-data-with-Power-BI-.git" target="_blank" class="btn-outline"><i class="fas fa-eye"></i> View Details</a>
-          </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1/sales-data-with-Power-BI-.git"
+             target="_blank" class="btn-outline" id="p2-btn">
+            View Details
+          </a>
         </div>
       </div>
-
-      <!-- مشروع 3 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="image/Dashboard EX 4.png" alt="Excel Dashboard Project">
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Excel Dashboard</h3>
-          <p class="project-description">An advanced interactive dashboard for analyzing sales and branch performance; it enables accurate monitoring of total revenue and customer numbers, with detailed analysis of sales by category, brand, and payment method, making it easier to track growth and identify the most efficient sales channels.</p>
-          <div class="project-tags"><span>Excel</span><span>Business Intelligence</span><span>Dashboard</span></div>
-          <div class="project-buttons">
-            <a href="https://github.com/razanahmed1/Sales-Dashboard-in-Excel.git" target="_blank" class="btn-outline"><i class="fas fa-eye"></i> View Details</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- مشروع 4 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="image/Dashboard Bi 2.png" alt="Power BI Dashboard Project">
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Power BI Dashboard</h3>
-          <p class="project-description">An interactive dashboard built with Power BI to analyze the Saudi Arabian real estate market. It provides a comprehensive view of property prices, counts, distribution across cities, and neighborhood-level insights.</p>
-          <div class="project-tags"><span>Power BI</span><span>KPIs</span><span>Geospatial</span></div>
-          <div class="project-buttons">
-            <a href="https://github.com/razanahmed1/Real-estate-data-analysis-in-Saudi-Arabia-with-Power-BI-.git" target="_blank" class="btn-outline"><i class="fas fa-eye"></i> View Details</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- مشروع 5 -->
-      <div class="project-card">
-        <div class="project-image">
-          <img src="image/Dashboard Bi 1.png" alt="Power BI Dashboard Project">
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">Power BI Dashboard</h3>
-          <p class="project-description">This project initiated an interactive dashboard to analyze the number of establishments in Saudi Arabia for 2023, after testing the data using an Excel stock analysis model in Power PI. The dashboard highlights key elements by size, region, and quarter, with interactive filters for economic activity and geographic location.</p>
-          <div class="project-tags"><span>Power BI</span><span>Market Analysis</span><span>Geospatial Insights</span></div>
-          <div class="project-buttons">
-            <a href="https://github.com/razanahmed1/Data-Analysis-of-Enterprises-withe-Power-BI-.git" target="_blank" class="btn-outline"><i class="fas fa-eye"></i> View Details</a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section-contact">
-    <h2 class="title">Contact</h2>
-    <p>This is where the passion begins… and we reach the furthest point.</p>
-    <p>You can reach me via:</p>
-    <div class="contact-icons">
-      <a href="mailto:rzanahmd302@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-      <a href="https://www.linkedin.com/in/razan-ageeli-034168209"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://github.com/razanahmed1" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="tel:+966552032408" title="Phone"><i class="fas fa-phone"></i></a>
     </div>
 
-    <button id="hello-btn"> Say hello! </button>
-  </section>
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="image/Dashboard EX 4.png" alt="Excel Dashboard Project">
+      </div>
 
-  <!-- FOOTER -->
-  <footer>
-    ©️ 2025 Razan Alageeli . All rights reserved.
-  </footer>
+      <div class="project-info">
+        <h3 class="project-title" id="p3-title">Excel Dashboard</h3>
 
-  <!-- جافاسكربت -->
-  <script>
-  function toggleMenu() {
-    const menu = document.getElementById("centerMenu");
-    menu.classList.toggle("show");
-  }
+        <p class="project-description" id="p3-desc">
+          An advanced interactive dashboard for analyzing sales and branch performance.
+        </p>
 
-  // إغلاق القائمة بعد الضغط على أي رابط
-  document.querySelectorAll("#centerMenu a").forEach(link => {
-    link.addEventListener("click", () => {
-      document.getElementById("centerMenu").classList.remove("show");
-    });
-  });
+        <div class="project-tags">
+          <span>Excel</span>
+          <span>Business Intelligence</span>
+          <span>Dashboard</span>
+        </div>
 
-  // زر "Say hello!"
-  const helloButton = document.getElementById("hello-btn");
-  if (helloButton) {
-    helloButton.addEventListener("click", function () {
-      helloButton.classList.add("active");
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1/Sales-Dashboard-in-Excel.git"
+             target="_blank" class="btn-outline" id="p3-btn">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
 
-      const msg = document.createElement("div");
-      msg.textContent = "Thank you for visiting my website 🌟.";
-      msg.className = "popup-message";
-      document.body.appendChild(msg);
+    <!-- Project 4 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="image/Dashboard Bi 2.png" alt="Power BI Dashboard Project">
+      </div>
 
-      setTimeout(() => {
-        msg.remove();
-        helloButton.classList.remove("active");
-      }, 3000);
-    });
-  }
+      <div class="project-info">
+        <h3 class="project-title" id="p4-title">Power BI Dashboard</h3>
 
-  // سكربت الكتابة والمسح (Typing Effect)
-  const elements = document.querySelectorAll(".typing");
-  elements.forEach(el => {
-    let words = JSON.parse(el.getAttribute("data-text"));
-    let i = 0, j = 0, currentWord = words[0], isDeleting = false;
+        <p class="project-description" id="p4-desc">
+          An interactive dashboard built with Power BI to analyze the Saudi Arabian real estate market.
+        </p>
 
-    function type() {
-      el.textContent = currentWord.substring(0, j);
+        <div class="project-tags">
+          <span>Power BI</span>
+          <span>KPIs</span>
+          <span>Geospatial</span>
+        </div>
 
-      if (!isDeleting && j < currentWord.length) {
-        j++;
-        setTimeout(type, 150);
-      } else if (isDeleting && j > 0) {
-        j--;
-        setTimeout(type, 100);
-      } else {
-        if (!isDeleting) {
-          isDeleting = true;
-          setTimeout(type, 1000);
-        } else {
-          isDeleting = false;
-          i = (i + 1) % words.length;
-          currentWord = words[i];
-          setTimeout(type, 200);
-        }
-      }
-    }
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1/Real-estate-data-analysis-in-Saudi-Arabia-with-Power-BI-.git"
+             target="_blank" class="btn-outline" id="p4-btn">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
 
-    type();
-  });
-</script>
+    <!-- Project 5 -->
+    <div class="project-card">
+      <div class="project-image">
+        <img src="image/Dashboard Bi 1.png" alt="Power BI Dashboard Project">
+      </div>
+
+      <div class="project-info">
+        <h3 class="project-title" id="p5-title">Power BI Dashboard</h3>
+
+        <p class="project-description" id="p5-desc">
+          This project initiated an interactive dashboard to analyze the number of establishments in Saudi Arabia.
+        </p>
+
+        <div class="project-tags">
+          <span>Power BI</span>
+          <span>Market Analysis</span>
+          <span>Geospatial Insights</span>
+        </div>
+
+        <div class="project-buttons">
+          <a href="https://github.com/razanahmed1/Data-Analysis-of-Enterprises-withe-Power-BI-.git"
+             target="_blank" class="btn-outline" id="p5-btn">
+            View Details
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <h2 class="section-title" id="experience-title">Experience</h2>
+
+  <div class="skills-wrapper">
+
+    <!-- Experience 1 -->
+    <div class="skills-box">
+      <h3 class="skills-heading" id="exp1-title">📘 Administrative Assistant</h3>
+
+      <div class="experience-content">
+        <p class="exp-role" id="exp1-role1">💼 Human Rights Commission — Cooperative Training</p>
+        <p class="exp-role" id="exp1-role2">May 2021 – July 2021</p>
+
+        <ul class="exp-list">
+          <li id="exp1-li1">Organizing files and documents</li>
+          <li id="exp1-li2">Preparing daily and weekly reports</li>
+          <li id="exp1-li3">Coordinating meetings and schedules</li>
+          <li id="exp1-li4">Handling emails and communication</li>
+          <li id="exp1-li5">Supporting daily office operations</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience 2 -->
+    <div class="skills-box">
+      <h3 class="skills-heading" id="exp2-title">🛠️ Control Systems Operator</h3>
+
+      <div class="experience-content">
+        <p class="exp-role" id="exp2-role1">💼 Imam Abdulrahman Bin Faisal University — Medical City</p>
+        <p class="exp-role" id="exp2-role2">Jan 2024 – Jun 2025</p>
+
+        <ul class="exp-list">
+          <li id="exp2-li1">Monitoring control systems and equipment performance</li>
+          <li id="exp2-li2">Recording daily readings and entering data accurately</li>
+          <li id="exp2-li3">Identifying initial system issues and reporting them</li>
+          <li id="exp2-li4">Following operational procedures (SOP)</li>
+          <li id="exp2-li5">Preparing daily and monthly operation reports</li>
+          <li id="exp2-li6">Responding to system alerts and taking proper action</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section-contact">
+  <h2 class="title" id="contact-title">Contact</h2>
+
+  <p id="contact-p1">This is where the passion begins… and we reach the furthest point.</p>
+  <p id="contact-p2">You can reach me via:</p>
+
+  <div class="contact-icons">
+    <a href="mailto:rzanahmd302@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/razan-ageeli-034168209"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/razanahmed1" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="tel:+966552032408"><i class="fas fa-phone"></i></a>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>©️ 2026 Razan Alageeli . All rights reserved.</footer>
+
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
+
 </body>
 </html>
