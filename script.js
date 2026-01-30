@@ -160,7 +160,7 @@ function setLanguage(lang) {
   safeSet("contact-p2", data.contactP2);
   safeSet("hello-btn", data.helloBtn);
 
-  /* ⭐ تشغيل الكتابة والمسح حسب اللغة */
+  // Typing effect
   startTyping(data.typingWords);
 }
 
@@ -228,6 +228,8 @@ const langEN = {
   contactP1:
     "This is where the passion begins… and we reach the furthest point.",
   contactP2: "You can reach me via:",
+
+  helloBtn: "Say Hello!",
 
   // TECHNICAL SKILLS
   skill1: "Data Analysis",
@@ -299,9 +301,10 @@ const langAR = {
 
   aboutTitle: "من أنا",
   aboutP1:
-   "انا رزان العقيلي خريجة علوم حاسوب ذو خبرة عملية في تشغيل أنظمة التحكم وتحليل البيانات. أعمل على تحويل البيانات إلى حلول ذكية بالاعتماد على الأتمتة والذكاء الاصطناعي، مع التركيز على تطوير مواقع وتطبيقات تجمع بين الوضوح والكفاءة وسهولة الاستخدام.",
+    "انا رزان العقيلي خريجة علوم حاسوب ذو خبرة عملية في تشغيل أنظمة التحكم وتحليل البيانات. أعمل على تحويل البيانات إلى حلول ذكية بالاعتماد على الأتمتة والذكاء الاصطناعي، مع التركيز على تطوير مواقع وتطبيقات تجمع بين الوضوح والكفاءة وسهولة الاستخدام.",
   aboutP2:
-  "شغفي هو ابتكار حلول تقنية تُسهم في اتخاذ قرارات أكثر دقة وبناء تجارب رقمية أكثر ذكاءً.",
+    "شغفي هو ابتكار حلول تقنية تُسهم في اتخاذ قرارات أكثر دقة وبناء تجارب رقمية أكثر ذكاءً.",
+
   projectsTitle: "المشاريع",
 
   p1Title: "لوحة تحكم Excel",
@@ -380,6 +383,23 @@ const langAR = {
   exp2Li5: "إعداد التقارير اليومية والشهرية",
   exp2Li6: "الاستجابة للتنبيهات واتخاذ الإجراء المناسب"
 };
+
+
+/* -------------------------
+      Mobile Menu System
+--------------------------*/
+
+function toggleMenu() {
+  const menu = document.getElementById("centerMenu");
+  menu.classList.toggle("active");
+}
+
+// Close menu after clicking any link
+document.querySelectorAll(".center-menu a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("centerMenu").classList.remove("active");
+  });
+});
 
 
 /* -------------------------
