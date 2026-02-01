@@ -17,7 +17,7 @@ body {
 
 /* Header */
 header {
-  background: rgba(13, 15, 26, 0.4); /* نفس لون الموقع لكن شفاف */
+  background: rgba(13, 15, 26, 0.4);
   backdrop-filter: blur(12px);
   position: fixed;
   top: 0;
@@ -31,7 +31,6 @@ header {
   padding: 12px 40px;
   border-radius: 50px;
 
-  /* إضاءة بنفسجية-زرقاء ناعمة */
   box-shadow:
     0 0 15px rgba(108, 178, 255, 0.3),
     0 0 30px rgba(192, 132, 252, 0.2);
@@ -52,9 +51,10 @@ header:hover {
   align-items: center;
 }
 
+/* تعديل مهم: زر المنيو داخل الهيدر وليس fixed */
 .menu-toggle,
 .lang-toggle {
-  position: static;
+  position: static !important;
   background: none;
   border: none;
   cursor: pointer;
@@ -94,44 +94,10 @@ header:hover {
 .navigation a:hover {
   color: #c084fc;
 }
-.logo {
-  color: #fff;
-  font-weight: 600;
-  font-size: 1.6em;
-  text-decoration: none;
-}
-
-.navigation a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.05em;
-  font-weight: 500;
-  padding-left: 25px;
-  transition: color 0.3s ease;
-}
-
-.navigation a:hover { 
-  color: #c084fc; 
-}
 
 /* زر المنيو */
 .menu-toggle {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1001;
-  font-size: 1.8em;
-  color: #fff;
-  background: none;
-  border: none;
-  cursor: pointer;
   display: none; /* مخفي في اللابتوب */
-  transition: transform 0.3s ease;
-}
-
-.menu-toggle:hover {
-  transform: scale(1.1);
-  color: #6cb2ff;
 }
 
 /* القائمة المنيو */
@@ -173,26 +139,24 @@ header:hover {
 /* يظهر فقط في الجوال والتابلت */
 @media (max-width: 1024px) {
   .menu-toggle {
-    display: block;
+    display: block !important;
   }
   header .navigation {
     display: none;
   }
-}
-.center-menu a {
-  color: #ffffff;
-  font-size: 1.1em;
-  text-decoration: none;
-  padding: 8px 0;
-  transition: color 0.3s ease;
-}
 
-.center-menu a:hover {
-  color: #6cb2ff;
+  /* ضمان بقاء زر المنيو + الترجمة جنب بعض */
+  .top-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 15px !important;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-
-
-.center-menu.show { display: flex; }
 
 /* Sections */
 section { padding: 100px 200px; }
