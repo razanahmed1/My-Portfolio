@@ -385,19 +385,20 @@ const langAR = {
 };
 
 
+
 /* -------------------------
       Mobile Menu System
 --------------------------*/
 
 function toggleMenu() {
   const menu = document.getElementById("centerMenu");
-  menu.classList.toggle("active");
+  menu.classList.toggle("show");   // ← مهم جداً
 }
 
 // Close menu after clicking any link
 document.querySelectorAll(".center-menu a").forEach(link => {
   link.addEventListener("click", () => {
-    document.getElementById("centerMenu").classList.remove("active");
+    document.getElementById("centerMenu").classList.remove("show"); // ← مهم جداً
   });
 });
 
