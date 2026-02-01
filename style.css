@@ -145,16 +145,22 @@ header:hover {
     display: none;
   }
 
-  /* ضمان بقاء زر المنيو + الترجمة جنب بعض */
+  /* أهم تعديل: زر الترجمة + زر المنيو جنب الاسم */
+  header {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .logo {
+    flex-shrink: 0;
+  }
+
   .top-buttons {
+    flex-shrink: 0;
     display: flex !important;
     flex-direction: row !important;
     gap: 15px !important;
-  }
-
-  header {
-    flex-direction: row;
-    justify-content: space-between;
   }
 }
 
@@ -207,6 +213,8 @@ section { padding: 100px 200px; }
 }
 .section-icons a { font-size: 2em; color: #ffffff; transition: 0.3s; }
 .section-icons a:hover { color: #c084fc; transform: scale(1.2); }
+
+
 
 /* About */
 .about-container {
