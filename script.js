@@ -257,23 +257,23 @@ const langEN = {
   exp1Title: "Administrative Assistant",
   exp1Role1: "💼 Human Rights Commission — Cooperative Training",
   exp1Role2: "May 2021 – July 2021",
-  exp1Li1: "Organizing files and documents",
-  exp1Li2: "Preparing daily and weekly reports",
-  exp1Li3: "Coordinating meetings and schedules",
-  exp1Li4: "Handling emails and communication",
-  exp1Li5: "Supporting daily office operations",
+  exp1Li1: " Handled and resolved customer complaints efficiently.",
+  exp1Li2: "Archived and indexed electronic transactions.",
+  exp1Li3: "Prepared detailed reports on electronic and in-person complaints.",
+  exp1Li4: "Provided direct customer support via phone and email, and referred cases to the appropriate specialist.",
+  
 
   // EXPERIENCE 2
   exp2Title: "Control Systems Operator",
   exp2Role1:
     "💼 Imam Abdulrahman Bin Faisal University — Medical City",
   exp2Role2: "Jan 2024 – Jun 2025",
-  exp2Li1: "Monitoring control systems and equipment performance",
-  exp2Li2: "Recording daily readings and entering data accurately",
-  exp2Li3: "Identifying initial system issues and reporting them",
-  exp2Li4: "Following operational procedures (SOP)",
-  exp2Li5: "Preparing daily and monthly operation reports",
-  exp2Li6: "Responding to system alerts and taking proper action"
+  exp2Li1: "Operated and monitored the Building Management System (BMS).",
+  exp2Li2: "Data entry and analysis using Excel software.",
+  exp2Li3: "Regularly inspect the devices and repair technical faults on the devices.",
+  exp2Li4: "Preparing reports and dashboards that help management improve performance and make accurate decisions.",
+  exp2Li5: "Submitted maintenance tickets for BMS system malfunctions.",
+  exp2Li6: "Monitored fire alarm systems and guided the response team to the alert location."
 };
 
 
@@ -364,23 +364,23 @@ const langAR = {
   exp1Title: "مساعدة إدارية",
   exp1Role1: "💼 هيئة حقوق الإنسان — تدريب تعاوني",
   exp1Role2: "مايو 2021 – يوليو 2021",
-  exp1Li1: "تنظيم الملفات والمستندات",
-  exp1Li2: "إعداد التقارير اليومية والأسبوعية",
-  exp1Li3: "تنسيق الاجتماعات والمواعيد",
-  exp1Li4: "التعامل مع البريد الإلكتروني",
-  exp1Li5: "دعم العمليات اليومية للمكتب",
+  exp1Li1: "التعامل مع شكاوى العملاء وحلها بكفاءة",
+  exp1Li2: "أرشفة وفهرسة المعاملات الإلكترونية",
+  exp1Li3: "إعداد تقارير مفصلة عن الشكاوى الإلكترونية والشخصية",
+  exp1Li4: "تقديم دعم مباشر للعملاء عبر الهاتف والبريد الإلكتروني، وإحالة الحالات إلى المختص المناسب",
+
 
   // EXPERIENCE 2
   exp2Title: "مشغلة أنظمة تحكم",
   exp2Role1:
     "💼 جامعة الإمام عبدالرحمن بن فيصل — المدينة الطبية",
   exp2Role2: "يناير 2024 – يونيو 2025",
-  exp2Li1: "مراقبة أداء الأنظمة والمعدات",
-  exp2Li2: "تسجيل القراءات اليومية بدقة",
-  exp2Li3: "تحديد المشكلات الأولية وإبلاغ الفريق المختص",
-  exp2Li4: "اتباع إجراءات التشغيل (SOP)",
-  exp2Li5: "إعداد التقارير اليومية والشهرية",
-  exp2Li6: "الاستجابة للتنبيهات واتخاذ الإجراء المناسب"
+  exp2Li1: "تشغيل ومراقبة نظام إدارة المباني (BMS).",
+  exp2Li2: "إدخال البيانات وتحليلها باستخدام برنامج Excel.",
+  exp2Li3: "فحص الأجهزة بانتظام وإصلاح الأعطال الفنية فيها.",
+  exp2Li4: "إعداد التقارير ولوحات المعلومات التي تساعد الإدارة على تحسين الأداء واتخاذ قرارات دقيقة.",
+  exp2Li5: "تقديم طلبات صيانة لأعطال نظام إدارة المباني.",
+  exp2Li6: "مراقبة أنظمة إنذار الحريق وتوجيه فريق الاستجابة إلى موقع الإنذار."
 };
 
 
