@@ -196,22 +196,22 @@ const langEN = {
   projectsTitle: "Projects",
 
   p1Title: "Excel Dashboard",
-  p1Desc: "Transform raw data into interactive strategic insights.",
+  p1Desc: "This project aims to design an interactive dashboard using Excel to enable teams to analyze sales data comprehensively and quickly. By displaying key performance indicators (KPIs) across multiple categories such as customer type, city, product, and gender.",
 
   p2Title: "Power BI Dashboard",
-  p2Desc: "A comprehensive Power BI dashboard analyzing orders and sales.",
+  p2Desc: "A comprehensive Power BI dashboard analyzing orders and sales from October 2024 to September 2025. Includes KPIs, shipping status, city-wise sales distribution, and top-performing product categories.",
 
   p3Title: "Excel Dashboard",
   p3Desc:
-    "An advanced interactive dashboard for analyzing sales and branch performance.",
+    "An advanced interactive dashboard for analyzing sales and branch performance; it enables accurate monitoring of total revenue and customer numbers, with detailed analysis of sales by category, brand, and payment method, making it easier to track growth and identify the most efficient sales channels.",
 
   p4Title: "Power BI Dashboard",
   p4Desc:
-    "An interactive dashboard built with Power BI to analyze the real estate market.",
+    "This dashboard provides an overview of real estate data across selected Saudi cities, including total sales, property counts, city-level distribution, and average prices by neighborhood. It also offers filters to narrow results by property size, age, city, and neighborhood.",
 
   p5Title: "Power BI Dashboard",
   p5Desc:
-    "An interactive dashboard analyzing establishments in Saudi Arabia.",
+    "This interactive dashboard presents detailed data on the distribution of establishments across Saudi Arabia in 2023. It categorizes establishments by size (small, medium, large) and includes quarterly trends that highlight growth throughout the year.",
 
   p6Title: "Personal Portfolio Website",
   p6Desc:
@@ -308,20 +308,19 @@ const langAR = {
   projectsTitle: "المشاريع",
 
   p1Title: "لوحة تحكم Excel",
-  p1Desc: "تحويل البيانات الخام إلى رؤى استراتيجية تفاعلية.",
+  p1Desc: "يهدف هذا المشروع إلى تصميم لوحة معلومات تفاعلية باستخدام برنامج Excel لتمكين الفرق من تحليل بيانات المبيعات بشكل شامل وسريع. وذلك من خلال عرض مؤشرات الأداء الرئيسية (KPIs) عبر فئات متعددة مثل نوع العميل والمدينة والمنتج والجنس.",
 
   p2Title: "لوحة تحكم Power BI",
-  p2Desc: "لوحة شاملة لتحليل الطلبات والمبيعات.",
+  p2Desc: "لوحة معلومات شاملة لـ Power BI تحلل الطلبات والمبيعات من أكتوبر 2024 إلى سبتمبر 2025. تتضمن مؤشرات الأداء الرئيسية، وحالة الشحن، وتوزيع المبيعات حسب المدينة، وفئات المنتجات ذات الأداء الأعلى.",
 
   p3Title: "لوحة تحكم Excel",
-  p3Desc: "لوحة تفاعلية متقدمة لتحليل المبيعات وأداء الفروع.",
+  p3Desc: "لوحة تحكم تفاعلية متقدمة لتحليل المبيعات وأداء الفروع؛ فهي تتيح مراقبة دقيقة لإجمالي الإيرادات وأعداد العملاء، مع تحليل مفصل للمبيعات حسب الفئة والعلامة التجارية وطريقة الدفع، مما يسهل تتبع النمو وتحديد قنوات البيع الأكثر كفاءة.",
 
   p4Title: "لوحة تحكم Power BI",
-  p4Desc: "لوحة تفاعلية لتحليل سوق العقار السعودي.",
+  p4Desc: "توفر هذه اللوحة معلومات شاملة عن سوق العقارات في مدن سعودية مختارة، بما في ذلك إجمالي المبيعات، وعدد العقارات، وتوزيعها على مستوى المدينة، ومتوسط ​​الأسعار حسب الحي. كما توفر فلاتر لتضييق نطاق النتائج حسب مساحة العقار، وعمره، والمدينة، والحي.",
 
   p5Title: "لوحة تحكم Power BI",
-  p5Desc: "لوحة تفاعلية لتحليل المنشآت في السعودية.",
-
+  p5Desc: "تعرض هذه اللوحة التفاعلية بيانات مفصلة عن توزيع المنشآت في جميع أنحاء المملكة العربية السعودية في عام 2023. وهي تصنف المنشآت حسب الحجم (صغيرة، متوسطة، كبيرة) وتتضمن اتجاهات ربع سنوية تسلط الضوء على النمو على مدار العام.",
   p6Title: "موقعي الشخصي",
   p6Desc:
     "موقع شخصي يعرض مهاراتي ومشاريعي وخبراتي بتصميم متجاوب وواجهة حديثة.",
