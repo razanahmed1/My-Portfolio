@@ -185,7 +185,7 @@ const langEN = {
   viewProjects: "View Projects",
   cv: "CV",
 
-  typingWords: ["Computer Science", "Data Analysis", "Web Development"],
+  typingWords: ["Computer Science", "Data Analysis", "Technical Support","Web Development"],
 
   aboutTitle: "About Me",
   aboutP1:
@@ -297,7 +297,7 @@ const langAR = {
   viewProjects: "عرض المشاريع",
   cv: "السيرة الذاتية",
 
-  typingWords: ["علوم الحاسب", "تحليل البيانات", "تطوير الويب"],
+  typingWords: ["علوم الحاسب" , "تحليل البيانات" , "الدعم الفني" , "تطوير الويب"],
 
   aboutTitle: "من أنا",
   aboutP1:
